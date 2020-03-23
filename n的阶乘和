@@ -1,0 +1,17 @@
+package 课程;
+import java.util.Scanner;
+public class n的阶乘和{
+public static void main(String[]args) {
+	Scanner shuru=new Scanner(System.in);
+	int n=shuru.nextInt();
+	int a=1,s=0,k,i;
+	for(k=1;k<=n;k++) {
+		for(i=1;i<=k;i++) {
+			a=a*i;//还是习惯用二次循环，按思维来做
+		}		
+	s=s+a;
+	a=1;//第一次忽略的a的值变化，怎么做都不对
+	}
+	System.out.println(s);
+}
+}
