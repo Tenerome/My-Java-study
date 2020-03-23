@@ -1,0 +1,25 @@
+package 课程;
+
+import java.util.Scanner;
+
+public class 月份转化季度 {
+
+	public static void main(String[] args) {
+	Scanner shuru=new Scanner(System.in);
+	System.out.print("请输入月份：");
+    int number=shuru.nextInt();
+    String name="";
+    if(number>0&&number<4)
+    	name="第一季度";
+    else if(number<7)
+    	name="第二季度";
+    else if(number<10)
+    	name="第三季度";
+    else if(number<13)
+    	name="第四季度";
+    else
+    	name="你过得是火星日历吧？";
+    System.out.print(name);
+	}
+
+}
