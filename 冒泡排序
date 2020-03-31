@@ -1,0 +1,24 @@
+package 课程;
+import java.util.Scanner;
+public class 排序 {
+
+	
+	public static void main(String[] args) {
+		Scanner scanf=new Scanner(System.in);
+		int a[]=new int[10];
+		System.out.print("在这输入：");
+		for(int i=0;i<a.length;i++)
+			a[i]=scanf.nextInt();
+		for(int i=a.length-1;i>=1;i--)
+			for(int j=0;j<=i-1;j++)//就用冒泡排序吧，其他的忘了//
+				if(a[j]>a[j+1]) {
+				int temp=a[j];
+				a[j]=a[j+1];
+				a[j+1]=temp;}
+		System.out.print("排好的顺序为：");
+	for(int i:a)
+		System.out.print(i+" ");
+		
+	}
+
+}
