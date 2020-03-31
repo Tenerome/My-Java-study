@@ -1,0 +1,25 @@
+package 课程;
+import java.util.Scanner;
+public class 求和平均最值 {
+
+	public static void main(String[] args) {
+		
+Scanner scanf=new Scanner(System.in);
+int a[]=new int[5];
+for(int i=0;i<a.length;i++)
+	a[i]=scanf.nextInt();
+int sum=0,max=a[0],min=a[0],aver;
+for(int i=0;i<a.length;i++) {
+	if(max<a[i])
+		max=a[i];
+	if(min>a[i])
+		min=a[i];
+	sum=sum+a[i];
+	
+}
+	aver=sum/a.length ;
+	System.out.print("最大的是："+max+"  "+"最小的是："+min+"  "+"和是："+sum+"  "+"平均值是："+aver);
+	
+	}
+
+}
